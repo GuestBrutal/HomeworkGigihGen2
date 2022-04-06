@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
@@ -90,6 +90,35 @@ function App() {
         {renderArtists()}
       </header>
     </div>
+  );
+}
+
+export default App;*/
+
+import "./App.css";
+import React, { useState } from "react";
+import CreatePlaylist from "./CreatePlaylist";
+import Login from "./Login";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+function App() {
+  const [token, setToken] = useState();
+
+  if (!token) {
+    return <Login setToken={setToken} />;
+  }
+
+  return (
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Switch>
+            <Route path="/CreatePlaylist" component={CreatePlaylist} />
+            <Route path="/" component={Login} />
+          </Switch>
+        </header>
+      </div>
+    </Router>
   );
 }
 
