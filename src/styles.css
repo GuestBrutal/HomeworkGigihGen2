@@ -1,4 +1,78 @@
 .App {
-  font-family: sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/2219730.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Signika;
   text-align: center;
+  align-items: center;
+  height: 1000px;
+}
+.Wallpaper {
+}
+.Container {
+  margin-left: 40px;
+  margin-top: 30px;
+  border-radius: 25px;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.Card-left {
+  background-color: white;
+  border-style: outset;
+  box-shadow: 5px 5px #888888;
+  grid-template-columns: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+.Card-right {
+  background-color: white;
+  box-shadow: 5px 5px #888888;
+  border-style: outset;
+  margin-left: 10px;
+  flex-direction: row-reverse;
+  grid-template-columns: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+.Song {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+.Picture {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+h4 {
+  font-weight: normal;
+  font-style: italic;
+}
+h1 {
+  padding-top: 20px;
+  color: white;
+}
+.Detail {
+  padding-top: 5px;
+  padding-left: 0px;
+  font-size: 10pt;
+  display: flex;
+  flex-direction: column;
 }

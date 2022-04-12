@@ -95,31 +95,130 @@ function App() {
 
 export default App;*/
 
-import "./App.css";
-import React, { useState } from "react";
-import CreatePlaylist from "./CreatePlaylist";
-import Login from "./Login";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import "./App.css";
+// import React, { useState } from "react";
+// import CreatePlaylist from "./CreatePlaylist";
+// import Login from "./Login";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  const [token, setToken] = useState();
+// function App() {
+//   const [token, setToken] = useState();
 
-  if (!token) {
-    return <Login setToken={setToken} />;
-  }
+//   if (!token) {
+//     return <Login setToken={setToken} />;
+//   }
 
+//   return (
+//     <Router>
+//       <div className="App">
+//         <header className="App-header">
+//           <Switch>
+//             <Route path="/CreatePlaylist" component={CreatePlaylist} />
+//             <Route path="/" component={Login} />
+//           </Switch>
+//         </header>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import "./styles.css";
+
+export default function App() {
   return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <Switch>
-            <Route path="/CreatePlaylist" component={CreatePlaylist} />
-            <Route path="/" component={Login} />
-          </Switch>
-        </header>
+    <div className="App">
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Signika"
+      />
+      <h1>Skrillex & Diplo Present Jack U</h1>
+      <div className="Container">
+        <div className="Card-left">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
+        <div className="Card-right">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
       </div>
-    </Router>
+      <div className="Container">
+        <div className="Card-left">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
+        <div className="Card-right">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
+      </div>
+
+      <div className="Container">
+        <div className="Card-left">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
+        <div className="Card-right">
+          <div className="Picture">
+            <img
+              className="Song"
+              src="https://ukf.com/wp-content/uploads/2015/05/jack-u-selects.jpg"
+            />
+          </div>
+          <div className="Detail">
+            <h2>Mind (feat. Kai)</h2>
+            <h3>Jack U, Skrillex, Diplo, Kai</h3>
+            <h4>Skrillex and Diplo Present Jack U</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-
-export default App;
